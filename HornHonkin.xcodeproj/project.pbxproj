@@ -13,6 +13,7 @@
 		91A2A8831AD86CF80041B55D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A2A8821AD86CF80041B55D /* Images.xcassets */; };
 		91A2A8861AD86CF80041B55D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A2A8841AD86CF80041B55D /* LaunchScreen.xib */; };
 		91A2A8921AD86CF80041B55D /* HornHonkinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2A8911AD86CF80041B55D /* HornHonkinTests.swift */; };
+		91A2A89C1AD8845C0041B55D /* RaceCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2A89B1AD8845C0041B55D /* RaceCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		91A2A88B1AD86CF80041B55D /* HornHonkinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HornHonkinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A2A8901AD86CF80041B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A2A8911AD86CF80041B55D /* HornHonkinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HornHonkinTests.swift; sourceTree = "<group>"; };
+		91A2A89B1AD8845C0041B55D /* RaceCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				91A2A87B1AD86CF80041B55D /* AppDelegate.swift */,
 				91A2A87D1AD86CF80041B55D /* ViewController.swift */,
 				91A2A87F1AD86CF80041B55D /* Main.storyboard */,
+				91A2A89B1AD8845C0041B55D /* RaceCar.swift */,
 				91A2A8821AD86CF80041B55D /* Images.xcassets */,
 				91A2A8841AD86CF80041B55D /* LaunchScreen.xib */,
 				91A2A8791AD86CF80041B55D /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A2A87E1AD86CF80041B55D /* ViewController.swift in Sources */,
+				91A2A89C1AD8845C0041B55D /* RaceCar.swift in Sources */,
 				91A2A87C1AD86CF80041B55D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var brandLabel: UILabel!
+  @IBOutlet weak var colorLabel: UILabel!
+  @IBOutlet weak var topSpeedLabel: UILabel!
+  @IBOutlet weak var funnyCarLabel: UILabel!
+
+  let myCar = RaceCar()
+
+
+  @IBAction func honkTapped() {
+    brandLabel.text = myCar.brand
+    colorLabel.text = myCar.color
+    topSpeedLabel.text = String(myCar.topSpeed)
+
+    funnyCarLabel.text = myCar.honk()
+
+    navigationController
+
+  }
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
