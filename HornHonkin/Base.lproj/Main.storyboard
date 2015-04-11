@@ -113,6 +113,7 @@
                         <outlet property="brandLabel" destination="gSZ-E5-JOD" id="VsH-g2-J8K"/>
                         <outlet property="colorLabel" destination="bVj-hp-gdY" id="Gky-im-Vtb"/>
                         <outlet property="funnyCarLabel" destination="8cc-Sx-cLs" id="L29-Vu-JZN"/>
+                        <outlet property="imageView" destination="Z3e-bU-0kg" id="wYh-hx-vmR"/>
                         <outlet property="topSpeedLabel" destination="XIw-Dg-oih" id="zf7-0G-vtd"/>
                     </connections>
                 </viewController>

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var colorLabel: UILabel!
   @IBOutlet weak var topSpeedLabel: UILabel!
   @IBOutlet weak var funnyCarLabel: UILabel!
+  @IBOutlet weak var imageView: UIImageView!
 
   let myCar = RaceCar()
 
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     topSpeedLabel.text = String(myCar.topSpeed)
 
     funnyCarLabel.text = myCar.honk()
+    imageView.hidden = false
 
 
 
@@ -33,6 +35,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    imageView.hidden = true
   }
 
   override func didReceiveMemoryWarning() {
