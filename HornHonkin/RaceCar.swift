@@ -17,7 +17,7 @@ class RaceCar: NSObject {
 
   func honk() -> String {
 //    var hornHonkString: String = "Honk! HONK!"
-    return "Honk HONK!"
+    return "\"Honk HONK!\""
   }
 
 

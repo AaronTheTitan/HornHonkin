@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,18 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funny Car..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-Sx-cLs">
-                                <rect key="frame" x="150" y="376" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...and the car says..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-Sx-cLs">
+                                <rect key="frame" x="150" y="267" width="300" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="nHq-HO-ecj"/>
+                                    <constraint firstAttribute="height" constant="39" id="4nh-xx-9gg"/>
+                                    <constraint firstAttribute="width" constant="300" id="hgF-5M-nte"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC3-5g-xSR">
-                                <rect key="frame" x="0.0" y="285" width="600" height="30"/>
-                                <state key="normal" title="HONK!">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.4274510145" blue="0.5647059083" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SPa-hb-0QE"/>
+                                </constraints>
+                                <state key="normal" title="HONK THE HORN!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -79,17 +87,26 @@
                                     <constraint firstAttribute="height" constant="177" id="lGq-KS-3gs"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lambo" translatesAutoresizingMaskIntoConstraints="NO" id="Z3e-bU-0kg">
+                                <rect key="frame" x="150" y="343" width="300" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RMq-5J-WqQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8cc-Sx-cLs" firstAttribute="centerX" secondItem="DC3-5g-xSR" secondAttribute="centerX" id="RL0-MX-Hlz"/>
-                            <constraint firstAttribute="trailing" secondItem="DC3-5g-xSR" secondAttribute="trailing" id="Xpq-wh-HaR"/>
-                            <constraint firstItem="8cc-Sx-cLs" firstAttribute="top" secondItem="DC3-5g-xSR" secondAttribute="bottom" constant="61" id="lWg-qp-yMf"/>
+                            <constraint firstAttribute="centerX" secondItem="Z3e-bU-0kg" secondAttribute="centerX" id="6BD-qA-Ah2"/>
+                            <constraint firstItem="DC3-5g-xSR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Aq5-sS-TMB"/>
+                            <constraint firstItem="Z3e-bU-0kg" firstAttribute="top" secondItem="8cc-Sx-cLs" secondAttribute="bottom" constant="37" id="BsE-Me-sOa"/>
+                            <constraint firstAttribute="centerX" secondItem="8cc-Sx-cLs" secondAttribute="centerX" id="JuZ-gj-N1f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DC3-5g-xSR" secondAttribute="trailing" constant="-16" id="Umq-Uu-BOo"/>
+                            <constraint firstItem="DC3-5g-xSR" firstAttribute="top" secondItem="Z3e-bU-0kg" secondAttribute="bottom" constant="25" id="aJ9-HP-KuB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DC3-5g-xSR" secondAttribute="bottom" id="fY8-SA-JME"/>
                             <constraint firstItem="toF-kR-ONL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="62" id="mPp-U1-Bag"/>
                             <constraint firstAttribute="centerX" secondItem="toF-kR-ONL" secondAttribute="centerX" id="pp9-pH-xSe"/>
-                            <constraint firstItem="DC3-5g-xSR" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="rbs-8y-jfp"/>
+                            <constraint firstItem="8cc-Sx-cLs" firstAttribute="top" secondItem="toF-kR-ONL" secondAttribute="bottom" constant="8" id="rcz-aU-dxU"/>
                             <constraint firstAttribute="centerX" secondItem="toF-kR-ONL" secondAttribute="centerX" id="y1g-dn-kSD"/>
-                            <constraint firstItem="DC3-5g-xSR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yDi-l7-Mkx"/>
                         </constraints>
                     </view>
                     <connections>
@@ -103,4 +120,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="lambo" width="585" height="339"/>
+    </resources>
 </document>

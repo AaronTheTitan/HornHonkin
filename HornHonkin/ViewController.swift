@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     funnyCarLabel.text = myCar.honk()
 
-    navigationController
+
 
   }
 
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
 
 }
 
